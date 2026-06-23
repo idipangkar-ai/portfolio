@@ -4,7 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favic.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Dipangkar Hajong</title>
+    <title>Dipangkar Hajong | Founder and Product Builder</title>
+    <meta
+      name="description"
+      content="Founder and product builder focused on privacy-first communication, consent-based access, systems thinking, and long-term human trust."
+    />
+    <meta name="author" content="Dipangkar Hajong" />
+    <meta property="og:title" content="Dipangkar Hajong | Founder and Product Builder" />
+    <meta
+      property="og:description"
+      content="A founder profile about privacy, consent, product thinking, and building communication systems where access is intentional."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dipangkar Hajong" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dipangkar Hajong | Founder and Product Builder" />
+    <meta
+      name="twitter:description"
+      content="Founder profile and product thesis on privacy-first technology, consent-based communication, and building from first principles."
+    />
+    <script>
+      (function () {
+        try {
+          var key = "portfolio-theme";
+          var stored = localStorage.getItem(key) || "system";
+          var valid = ["system", "light", "dark", "midnight", "aurora"];
+          var preference = valid.indexOf(stored) >= 0 ? stored : "system";
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var resolved = preference === "system" ? (prefersDark ? "dark" : "light") : preference;
+          document.documentElement.dataset.themePreference = preference;
+          document.documentElement.dataset.theme = resolved;
+        } catch (error) {
+          document.documentElement.dataset.themePreference = "system";
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

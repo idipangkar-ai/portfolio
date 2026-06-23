@@ -1,0 +1,53 @@
+:root {
+  color-scheme: dark;
+
+  --font-sans: "Inter", "Jost", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-96: 6rem;
+  --space-128: 8rem;
+
+  --radius-xs: 0.625rem;
+  --radius-sm: 0.875rem;
+  --radius-md: 1.25rem;
+  --radius-lg: 1.75rem;
+  --radius-xl: 2.25rem;
+  --radius-2xl: 2.75rem;
+  --radius-full: 999px;
+
+  --shadow-soft: 0 14px 42px rgba(0, 0, 0, 0.18);
+  --shadow-medium: 0 24px 72px rgba(0, 0, 0, 0.24);
+  --shadow-large: 0 40px 120px rgba(0, 0, 0, 0.32);
+  --shadow-glass: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 28px 86px rgba(0, 0, 0, 0.3);
+
+  --duration-fast: 160ms;
+  --duration-normal: 280ms;
+  --duration-slow: 720ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --container-sm: 760px;
+  --container-md: 980px;
+  --container-lg: 1180px;
+  --container-xl: 1360px;
+  --page-gutter: clamp(var(--space-16), 3vw, var(--space-48));
+  --section-y: clamp(var(--space-64), 11vw, var(--space-128));
+
+  --type-display: clamp(3.4rem, 9vw, 8.8rem);
+  --type-heading: clamp(2.25rem, 5vw, 5.8rem);
+  --type-title: clamp(1.75rem, 3vw, 3.5rem);
+  --type-body: clamp(1rem, 1.5vw, 1.125rem);
+  --type-lead: clamp(1.05rem, 2vw, 1.35rem);
+  --type-caption: 0.8125rem;
+}
+
